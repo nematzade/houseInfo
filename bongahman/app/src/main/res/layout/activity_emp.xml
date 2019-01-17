@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context="com.example.mohammad.bongahman.Emp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/raees"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="جناب آقای حبیب رضایی"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="رییس اتحادیه املاک:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellRaees"
+        android:layout_below="@+id/raees"
+        android:background="@color/black"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="09125479240"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:textColor="@color/twColor"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/naeb"
+        android:layout_below="@+id/tellRaees"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جناب آقای غفار شاهی عربلو"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="نايب رییس اول اتحادیه:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellNaeb"
+        android:layout_below="@+id/naeb"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="09121195076"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/naeb2"
+        android:layout_below="@+id/tellNaeb"
+        android:layout_margin="5px"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="جناب آقای علی جانبخشی"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="نايب رییس دوم اتحادیه:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellNaeb2"
+        android:layout_below="@+id/naeb2"
+        android:background="@color/black"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="09123499120"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dabir"
+        android:layout_below="@+id/tellNaeb2"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جناب آقای سهراب آقازاده"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="دبیر:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellDabir"
+        android:layout_below="@+id/dabir"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="09125769173"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/khazane"
+        android:layout_below="@+id/tellDabir"
+        android:layout_margin="5px"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="جناب آقای جنت مروتی"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="خزانه دار"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tellKhazane"
+        android:layout_below="@+id/khazane"
+        android:layout_margin="5px"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="09191139077"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/comisionHal"
+        android:layout_below="@+id/tellKhazane"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="9dp"
+            android:text="جناب آقای محمد علیزاده"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12dp"
+            android:text="عضو هیيت مدیره و نماینده اتحادیه در کمیسیون حل اختلاف:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tellHal"
+        android:layout_below="@+id/comisionHal"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="09123368197"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comisionBazresi"
+        android:layout_below="@+id/tellHal"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:layout_marginRight="9dp"
+            android:text="جناب آقای فرج اله محمدی"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:textSize="12dp"
+            android:text="عضو هیيت مدیره و نماینده اتحادیه در کمیسیون بازرسی:"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bazresiTell"
+        android:layout_below="@+id/comisionBazresi"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="09125289116"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barzesEtahdieh"
+        android:layout_below="@+id/bazresiTell"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="جناب آقای خیراله علیمحمدی"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="بازرس اتحادیه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barzesEtahdiehTell"
+        android:layout_below="@+id/barzesEtahdieh"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="09122132584"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تلفن همراه"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/barzesEtahdiehTell"
+        android:layout_margin="5px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/color"
+            android:text="آدرس: جاده ساوه شهرک فجر (کلمه)ُ خیابان ۲۵ متری شهید همت ساختمان اتاق اصناف ۰۲۱۵۶۳۲۸۴۴۱  "/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

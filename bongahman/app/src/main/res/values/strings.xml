@@ -1,0 +1,9 @@
+<resources>
+    <!--<string name="app_name">اتحادیه مشاورین املاک شهرستان بهارستان</string>-->
+    <string name="app_name">تعرفه املاک</string>
+    <string name="price">مبلغ کل معامله</string>
+    <string name="mali">مالیات بر ارزش افزوده</string>
+    <string name="colCms">کل کمیسیون</string>
+    <string name="jamCms">جمع کل کمیسیون از هر طرف</string>
+
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+
+        <EditText
+            android:id="@+id/rahn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4pt"
+            android:layout_marginTop="3pt"
+            android:text="مبلغ رهن"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ejare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4pt"
+            android:text="مبلغ اجاره ماهیانه" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="50px"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/maliatRahn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:maxLength="2"
+            android:text="9"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4pt"
+            android:text="@string/mali" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="30px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="@string/colCms" />
+
+        <TextView
+            android:id="@+id/cmsRahn"
+            android:textColor="@color/twColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:layout_marginTop="10px"
+            android:text="0"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="235dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="@string/mali" />
+
+        <TextView
+            android:id="@+id/maliatBarArzeshRahn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="0"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="@string/jamCms" />
+
+        <TextView
+            android:id="@+id/jamkolRahn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/twColor"
+            android:text="0"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="20dp"
+        android:text="مبلغ اجاره واقعی بعد از تبدیل:"
+        />
+
+    <TextView
+        android:id="@+id/ejareV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="10px"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ejareV"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/color"
+        android:text="این تعرفه مختص متصدیان املاک دارای پروانه کسب معتبر میباشد وبه واحد های صنفی غیر مجاز تعلق نمی گیرد. شهروندان از پرداخت کمیسیون به واحد های غیر مجاز خودداری نمایند."/>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textColor="@color/color"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:text="کمیسیون نظارت شهرستان بهارستان"/>-->
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_alignRight="@+id/linearLayout"-->
+        <!--android:src="@mipmap/icon" />-->
+
+
+</RelativeLayout>

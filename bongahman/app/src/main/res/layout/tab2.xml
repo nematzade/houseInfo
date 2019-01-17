@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:inputType="number"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4pt"
+            android:layout_marginTop="3pt"
+            android:text="@string/price"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etMali"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:maxLength="2"
+            android:text="9"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="4pt"
+            android:text="@string/mali" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/twColor"
+            android:layout_weight="1"
+            android:text="@string/colCms" />
+
+        <TextView
+            android:id="@+id/fullComision"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/twColor"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginRight="30px"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/twColor"
+            android:layout_weight="1"
+            android:text="@string/mali" />
+
+        <TextView
+            android:id="@+id/maliatBarArzesh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/twColor"
+            android:text="0"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginRight="30px"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="30px"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/twColor"
+            android:layout_weight="1"
+            android:text="@string/jamCms" />
+
+        <TextView
+            android:id="@+id/jamkol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:textColor="@color/twColor"
+            android:text="0"
+            android:textAlignment="center"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:id="@+id/btnSale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="مشاهده ریز محاسبات"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/danger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSale"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/color"
+        android:text="این تعرفه مختص متصدیان املاک دارای پروانه کسب معتبر میباشد وبه واحد های صنفی غیر مجاز تعلق نمی گیرد. شهروندان از پرداخت کمیسیون به واحد های غیر مجاز خودداری نمایند."/>
+
+
+    <TextView
+        android:layout_below="@id/danger"
+        android:layout_marginTop="10px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/color"
+        android:textAlignment="center"
+        android:text="نرخ کارمزد خدمات واحد های صنفی مشاورین املاک مصوب مورخ ۱۳۹۷/۰۸/۲۷"/>
+
+</RelativeLayout>
