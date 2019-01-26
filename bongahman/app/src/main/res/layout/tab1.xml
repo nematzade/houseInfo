@@ -4,7 +4,9 @@
     android:layout_height="match_parent"
     android:id="@+id/rel"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,21 +14,23 @@
         android:orientation="horizontal"
         tools:ignore="UselessParent">
 
-
-        <EditText
-            android:id="@+id/rahn"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.4"
-            android:inputType="number"/>
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="4pt"
-            android:layout_marginTop="3pt"
-            android:text="مبلغ رهن"/>
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/rahn"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:hint="مبلغ رهن"/>
+
+        </android.support.design.widget.TextInputLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -35,19 +39,23 @@
         android:layout_marginTop="60dp"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/ejare"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.4"
-            android:inputType="number" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="4pt"
-            android:text="مبلغ اجاره ماهیانه" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/ejare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_margin="16dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:hint="مبلغ اجاره ماهیانه"
+                android:inputType="number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
 
     </LinearLayout>
 
@@ -58,21 +66,24 @@
         android:layout_marginBottom="50px"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/maliatRahn"
+        <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.4"
-            android:maxLength="2"
-            android:text="9"
-            android:inputType="number" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="4pt"
-            android:text="@string/mali" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/maliatRahn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginTop="5dp"
+                android:textSize="14sp"
+                android:hint="مالیات بر ارزش افزوده"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="9"
+                android:textColor="@color/black" />
+
+        </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
 
@@ -88,16 +99,19 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:textColor="@color/twColor"
+            android:textColor="@color/black"
             android:text="@string/colCms" />
 
         <TextView
             android:id="@+id/cmsRahn"
-            android:textColor="@color/twColor"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0.4"
+            android:gravity="center"
             android:layout_marginTop="10px"
             android:text="0"
             android:textAlignment="center"/>
@@ -120,7 +134,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/twColor"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
             android:text="@string/mali" />
 
         <TextView
@@ -128,7 +144,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/twColor"
+            android:textColor="@color/black"
+            android:gravity="center"
             android:text="0"
             android:textAlignment="center"/>
 
@@ -150,7 +167,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/twColor"
+            android:paddingRight="2dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/black"
             android:text="@string/jamCms" />
 
         <TextView
@@ -158,8 +177,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColor="@color/twColor"
+            android:textColor="@color/black"
+            android:gravity="center"
             android:text="0"
+            android:padding="4dp"
             android:textAlignment="center"/>
 
 
@@ -171,6 +192,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:text="مبلغ اجاره واقعی بعد از تبدیل:"
         />
 
@@ -179,6 +202,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
+        android:textColor="@color/black"
         android:layout_marginLeft="10px"
         android:layout_marginTop="20dp"/>
 
